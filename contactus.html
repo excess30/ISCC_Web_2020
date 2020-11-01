@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+
+        <!-- Makes the Webpage Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Import font-awesome as well as bootstrap social -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+         <!-- Import the CSS file --> 
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <!-- Create a Navbar using all the default classes of Bootstrap -sm means toggle behavoiur for extra small and small screens -->
+    <nav class= "navbar navbar-dark navbar-expand-sm fixed-top">
+         <!-- For width of the content in webpage we used container class -->
+         <div class="container">
+        <!-- For creating a toggle for extra small and small screen sizes-->
+         <!-- Default classes of bootstrap data-toggle is a JS component in bootstrap-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+             <!-- Specifies icon to the toggler-->
+             <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- For displaying information # is used to navigate back to homepage -->
+        <a class="navbar-brand mr-auto" href="#">< <img src= "img/innervelogo.png" height="30" width="41"></a>
+         <!-- To show and hide the contents collapse class is used-->
+         <div class="collapse navbar-collapse" id="Navbar">
+         <!-- For setting up links navbar-nav with ul is used mr-auto is used for margins-->
+         <ul class="navbar-nav mr-auto">
+            <!-- Active is used to change the color of hyperlinks as it shows which page you are currently in -->
+            <!-- fa means you are using font-awesome class and fa-home is specific icon for home screen and fa-lg means large size icons-->
+           <li class="nav-item"><a class="nav-link" href="./index.html"><span class = "fa fa-home fa-lg"></span> Home </a></li>
+            <!-- Linking the aboutus.html page -->
+           <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class = "fa fa-info fa-lg"></span> About</a></li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./events.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class = "fa fa-info fa-lg"></span> Events </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./events.html">CSE/IT</a>
+                <a class="dropdown-item" href="./events.html">ECE Tech</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./events.html">Fun Events</a>
+                <a class="dropdown-item" href="./events.html">Workshops/Seminars</a>
+            </div>
+        </li>
+           <li class="nav-item active"><a class="nav-link" href="#"><span class = "fa fa-address-card fa-lg"></span> Contact</a></li>
+           <li class="nav-item"><a class="nav-link" href="./socialcampagin.html"><span class = "fa fa-info fa-lg"></span> Social Campaign</a></li>  
+           <li class="nav-item"><a class="nav-link" href="./gallery.html"><span class = "fa fa-image fa-lg"></span> Photo Gallery </a></li>
+           <li class="nav-item"><a class="nav-link" href="./socialawarness.html"><span class = "fa fa-info fa-lg"></span> Social Awarness</a></li>  
+        </ul>
+         </div>
+        </div>
+    </nav>
+    <img src="img/competitions.jpg" class="d-block w-100 alt="1st Slide">
+    <div class="col-12">
+        <h3>Contact Us</h3>
+        <hr>
+     </div>
+ </div>
+
+ <div class="row row-content">
+    <div class="col-12">
+       <h3>Location Information</h3>
+    </div>
+     <div class="col-12 col-sm-4 offset-sm-1">
+            <h5>Our Address</h5>
+             <address style="font-size: 100%">
+                IGDTUW, Kashmere Gate, Delhi-110092<br>
+               <i class="fa fa-phone"></i>: 91+1234567890 <br>
+               <i class="fa fa-fax"></i>: +91 8765 4321<br>
+               <i class="fa fa-envelope"></i>:example@website.com<br>
+                 <a href="mailto:example@website.com">example@website.com</a>
+            </address>
+     </div>
+     <div class="col-12 col-sm-11 offset-sm-1">
+         <!-- To create a group of buttons we used role=group-->
+         <div class="btn-group" role="group"></div>
+         <!-- As we have links to connect we use the "a" tag-->
+           <!-- For the colour we use btn-primary. Use of this button is to call the restro so we add the no in href-->
+         <a role="button" class="btn btn-primary" href="tel:+91987654321"><i class="fa fa-phone"></i> Call </a>
+           <!-- For Video Call. The color of the button should be light blue so we use btn-info-->
+         <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype </a>
+           <!-- For email. The color of the button should be green so we use btn-success-->
+         <a role="button" class="btn btn-success" href="mailto:example@website.com"><i class="fa fa-envelope-o"></i> Email </a>
+     </div>
+ </div>
+
+ <div class="row row-content">
+    <div class="col-12">
+       <h3>Send us your Feedback</h3>
+    </div>
+     <div class="col-12 col-md-9">
+           <!-- To create a form-->
+           <form>
+          <!-- Divide the forms in rows-->
+          <div class="form-group row">
+         <!-- Label is used for indication for text boxes-->
+         <label for="firstame" class="col-md-2 col-form-label"> First Name </label>
+         <div class="col-md-10">
+             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Example: Sejal">
+         </div>
+       </div>
+         <div class="form-group row">
+             <label for="lastname" class="col-md-2 col-form-label"> Last Name </label>
+             <div class="col-md-10">
+                 <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Example: Chowdhury">
+             </div>
+         </div>
+         <div class="form-group row">
+             <!-- Label is used for indication for text boxes col-12 for extra small screens-->
+              <!-- For area code-->
+             <label for="telnum" class="col-12 col-md-2 col-form-label"> Area Code </label>
+             <div class="col-5 col-md-3">
+                 <input type="text" class="form-control" id="areacode" name="areacode" placeholder="Example: +977">
+             </div>
+            <!-- For the telephone number-->
+                 <div class="col-7 col-md-7">
+                     <input type="text" class="form-control" id="telnum" name="telnum" placeholder="Example: 987654321">
+                 </div>
+             </div>
+             <!-- For email id -->
+             <div class="form-group row">
+                 <label for="email" class="col-md-2 col-form-label"> Email </label>
+                 <div class="col-md-10">
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Example: someone@example.com">
+                 </div>
+             </div>
+             <!-- For checkboxes -->
+             <div class="form-group-row">
+                 <div class="col-md-6 offset-md-2"> 
+                     <div class="form-check">
+                         <input type = "checkbox" class="form-check-input" name="approve" id="approve" value="">
+                         <label class="form-check-label" for="approve">
+                             <strong> How may I help you ?</strong>
+                         </label>
+                     </div>
+                 </div>
+                 <div class="col-md-3 offset-md-1">
+                     <select class="form-control">
+                         <option> Tel.</option>
+                         <option> Email.</option>
+                     </select>
+                 </div>
+             </div>
+             <!-- Adding a text area-->
+             <div class="form-group row">
+                 <label for="email" class="col-md-2 col-form-label"> Feedback </label>
+                 <div class="col-md-10">
+                     <textarea class="form-control" id="Feedback" name="feedback" placeholder="Type Here" rows="12"></textarea>
+                 </div>
+             </div>
+             <!-- Adding a submit button-->
+             <div class="form-group-row">
+                 <div class="offset-md-2 col-md-10">
+                     <button type="Submit" class="btn btn-info">
+                         Send Feedback !!
+                     </button>
+                 </div>
+             </div>
+           </form>
+     </div>
+      <div class="col-12 col-md">
+     </div>
+</div>
+
+</div>
+
+<footer class="footer">
+ <div class="container">
+     <div class="row">             
+         <div class="col-4 offset-1 col-sm-2">
+             <h5>Links</h5>
+             <ul class="list-unstyled">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About</a></li>
+                 <li><a href="#">Menu</a></li>
+                 <li><a href="#">Contact</a></li>
+             </ul>
+         </div>
+         <div class="col-7 col-sm-5">
+             <h5>Our Address</h5>
+             <address>
+                IGDTUW, Kashmere Gate, Delhi-110092<br>
+               <i class="fa fa-phone fa-lg"></i>: +91987654321<br>
+               <i class="fa fa-fax fa-lg"></i>: +91 8765 4321<br>
+               <i class="fa fa-envelope fa-lg"></i>: 
+               <a href="mailto:example@website.com">example@website.com</a>
+            </address>
+         </div>
+         <div class="col-12 col-sm-4 align-self-center">
+             <div class="text-center">
+                 <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                 <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                 <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                 <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                 <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                 <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+             </div>
+         </div>
+    </div>
+    <div class="row justify-content-center">             
+         <div class="col-auto">
+             <p>© Blah Blah </p>
+         </div>
+    </div>
+ </div>
+</footer>
+
+<div class="container">
+    <div class="row">
+        <!-- Applying breadcrumb class to col 12-->
+        <ol class = "col-12 breadcrumb">
+            <!-- Using breadcrumb item to link back to the home page. Ol is used so we can create a list inside breadcrumb. -->
+            <li class="breadcrumb-item align-center"> Made with ❤️ by Sejal </li>
+        </ol>
+        </div>
+        </div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

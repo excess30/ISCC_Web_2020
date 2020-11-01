@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+
+        <!-- Makes the Webpage Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Import font-awesome as well as bootstrap social -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+         <!-- Import the CSS file --> 
+        <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <!-- Create a Navbar using all the default classes of Bootstrap -sm means toggle behavoiur for extra small and small screens -->
+    <nav class= "navbar navbar-dark navbar-expand-sm fixed-top">
+         <!-- For width of the content in webpage we used container class -->
+         <div class="container">
+        <!-- For creating a toggle for extra small and small screen sizes-->
+         <!-- Default classes of bootstrap data-toggle is a JS component in bootstrap-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+             <!-- Specifies icon to the toggler-->
+             <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- For displaying information # is used to navigate back to homepage -->
+        <a class="navbar-brand mr-auto" href="#">< <img src= "img/innervelogo.png" height="30" width="41"></a>
+         <!-- To show and hide the contents collapse class is used-->
+         <div class="collapse navbar-collapse" id="Navbar">
+         <!-- For setting up links navbar-nav with ul is used mr-auto is used for margins-->
+         <ul class="navbar-nav mr-auto">
+            <!-- Active is used to change the color of hyperlinks as it shows which page you are currently in -->
+            <!-- fa means you are using font-awesome class and fa-home is specific icon for home screen and fa-lg means large size icons-->
+           <li class="nav-item"><a class="nav-link" href="./index.html"><span class = "fa fa-home fa-lg"></span> Home </a></li>
+            <!-- Linking the aboutus.html page -->
+           <li class="nav-item active"><a class="nav-link" href="#"><span class = "fa fa-info fa-lg"></span> About</a></li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./events.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class = "fa fa-info fa-lg"></span> Events </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./events.html">CSE/IT</a>
+                <a class="dropdown-item" href="./events.html">ECE Tech</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./events.html">Fun Events</a>
+                <a class="dropdown-item" href="./events.html">Workshops/Seminars</a>
+            </div>
+        </li>
+           <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class = "fa fa-address-card fa-lg"></span> Contact</a></li>
+           <li class="nav-item"><a class="nav-link" href="./socialcampagin.html"><span class = "fa fa-info fa-lg"></span> Sponsors</a></li>  
+           <li class="nav-item"><a class="nav-link" href="./gallery.html"><span class = "fa fa-image fa-lg"></span> Photo Gallery </a></li>
+           <li class="nav-item"><a class="nav-link" href="./socialawarness.html"><span class = "fa fa-info fa-lg"></span> Social Awarness </a></li>  
+        </ul>
+         </div>
+        </div>
+    </nav>
+    <img src="img/tech9.jpg" class="d-block w-100" alt="1st Slide">
+    <div class="about ">
+        <h1>About us</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+            <!-- Applying breadcrumb class to col 12-->
+            <ol class = "col-12 breadcrumb">
+                <!-- Using breadcrumb item to link back to the home page. Ol is used so we can create a list inside breadcrumb. -->
+                <li class="breadcrumb-item align-center"> Made with ❤️ by Sejal </li>
+            </ol>
+            </div>
+            </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
